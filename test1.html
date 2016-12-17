@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>HTML5</title>
+        <style>
+        #gradient{
+            height: 100px;
+            width: 100px;
+            background-color:  red;
+            border-left: 100px solid #222222;
+            border-top: 100px solid #333333;
+            /*border-top-left-radius: 100px;    向左上角添加圆角边框*/
+            border-bottom: 100px solid #000000;
+            border-right: 100px solid #111111;
+            border-radius: 100px;            /*边框圆角*/
+        }
+        #gradient span{
+            height: 100%;
+            width: 100%;
+            display: block;
+            background-color: blue;
+            opacity: 0;    /*、opacity为div元素的不透明度*/
+        }
+        #gradient:hover span{
+            opacity: 1;
+            transition:all ease-in 1s;
+        }
+
+        #div1{
+            background-color: #7a6875;
+            border:10px solid #000;
+            border-top-color: #500 #700 #900 #b00;
+            border-left-color: #500 #700 #900 #b00;
+            border-right-color: #500 #700 #900 #b00;
+            padding: 5px 10px;
+        }
+        #div2 {
+            -webkit-border-image: url(border.png) 30 30 round;
+        }
+        div{
+            border:15px solid transparent;
+            width:300px;
+            padding:10px 20px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="gradient">
+            <span>这是变色+变形</span>
+        </div>
+        <div id = "div1">
+            <span>css之美</span>
+        </div>
+        <div id="div2">
+            <span>边框图片</span>
+        </div>
+    </body>
+</html>
